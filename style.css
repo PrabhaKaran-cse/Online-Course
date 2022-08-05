@@ -1,0 +1,10 @@
+@media screen and (max-width: 992px){
+        .btn-query-center{
+            display: block
+;
+        }
+}
+.my-5rem{
+        margin-top:6rem !important;
+        margin-bottom: 3rem!important;
+}
