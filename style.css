@@ -8,3 +8,20 @@
         margin-top:6rem !important;
         margin-bottom: 3rem!important;
 }
+.flex-colum a {
+        padding: .5rem;
+}
+.flex-colum a:first-child{
+        padding-top: 0px;
+}
+@media screen and (max-width: 767px){
+        .flex-colum{
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: space-around;
+        }
+        .borderr{
+                padding-bottom: 1rem;
+                
+        }
+}
