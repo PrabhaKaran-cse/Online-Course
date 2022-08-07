@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item px-3">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link " aria-current="page" href="index.html"
                 >Home</a
               >
             </li>
@@ -100,7 +100,7 @@
             </li>
           </ul>
           <div class="d-grid">
-            <a href="login.html" type="button" class="btn btn-outline-light">
+            <a href="login.html" type="button" class="btn btn-outline-light active">
               Register
             </a>
           </div>
@@ -109,7 +109,111 @@
     </nav>
     <!--Navbar End-->
     <!--Body Start-->
-    
+    <!--Login-->
+    <div class="container my-5rem d-flex justify-content-center">
+      <div class="my-2 p-5 rounded-4 border border-2 border-light">
+        <div>
+          <!-- Pills navs Start -->
+          <div class="nav nav-pills nav-justified mb-3">
+            <a class="nav-link bg-light text-secondary" href="#pills-login"
+              >Login</a
+            >
+          </div>
+          <!-- Pills navs End -->
+          <!-- Pills content Start -->
+          <form>
+            <div class="text-center mb-3">
+              <p>Sign in with:</p>
+              <button
+                type="button"
+                class="btn btn-link text-muted btn-floating mx-1 boxx"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-link text-muted btn-floating mx-1 boxx"
+              >
+                <i class="fab fa-google"></i>
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-link text-muted btn-floating mx-1 boxx"
+              >
+                <i class="fab fa-twitter"></i>
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-link text-muted btn-floating mx-1 boxx"
+              >
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+
+            <p class="text-center">or:</p>
+
+            <!-- Email input -->
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput" class="text-muted"
+                >Email address</label
+              >
+            </div>
+            <!-- Password input -->
+            <div class="form-floating mb-4">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword" class="text-muted">Password</label>
+            </div>
+
+            <!-- 2 column grid layout -->
+            <div class="row mb-4">
+              <div class="col-md-6 d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                Remember me
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex justify-content-center ">
+                <!-- Simple link -->
+                <a href="#!"class="text-muted">Forgot password?</a>
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <button
+              type="submit"
+              class="btn btn-dark mb-4"
+              style="display: block; width: 100%"
+            ><a href=""></a>
+              Sign in
+            </button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>Not a member? <a href="#!" class="text-muted">Register</a></p>
+            </div>
+          </form>
+        </div>
+        <!-- Pills content End -->
+      </div>
+    </div>
     <!--Body End-->
     <!--Footer Start-->
     <div class="container-fluid p-5 pb-3 bg-dark text-secondary footer">
