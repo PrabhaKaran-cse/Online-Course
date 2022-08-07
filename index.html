@@ -1,88 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sri Manakula Vinayagar Online Courses</title>
     <!-- CSS  only -->
-    <link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
-<body>
-<!--Navbar Start-->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Navbar Start-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="" href="index.html">
-                <img src="logo.png" alt="" width="270px">
+      <div class="container-fluid">
+        <a class="" href="index.html">
+          <img src="logo.png" alt="" width="270px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item dropdown px-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Disciplines
               </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item px-3">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="courses.html">Courses</a>
-              </li>
-              <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Disciplines
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="courses.html">All</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a href="cse.html" class="dropdown-item">Computer Science & Engineering<span class="badge text-bg-info">7</span></a></li>
-                  <li><a href="ece.html" class="dropdown-item">Electronic & Communication Engineering<span class="badge text-bg-info">5</span></a></li>
-                  <li><a href="mec.html" class="dropdown-item">Mechanical Engineering<span class="badge text-bg-info">2</span></a></li>
-                  <li><a href="bio.html" class="dropdown-item">Bio-Medical Engineering<span class="badge text-bg-info">6</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item px-3">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search Courses..." aria-label="Search">
-                    <button class="btn btn-secondary" type="submit">Search</button>
-                  </form>
-              </li>
-            </ul><div class="d-grid "><button type="button" class="btn btn-outline-light ">Register</button></div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="courses.html">All</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a href="cse.html" class="dropdown-item"
+                    >Computer Science & Engineering<span
+                      class="badge text-bg-info"
+                      >7</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="ece.html" class="dropdown-item"
+                    >Electronic & Communication Engineering<span
+                      class="badge text-bg-info"
+                      >5</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="mec.html" class="dropdown-item"
+                    >Mechanical Engineering<span class="badge text-bg-info"
+                      >2</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="bio.html" class="dropdown-item"
+                    >Bio-Medical Engineering<span class="badge text-bg-info"
+                      >6</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-3">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search Courses..."
+                  aria-label="Search"
+                />
+                <button class="btn btn-secondary" type="submit">Search</button>
+              </form>
+            </li>
+          </ul>
+          <div class="d-grid">
+            <a href="login.html" type="button" class="btn btn-outline-light">
+              Register
+            </a>
           </div>
         </div>
-      </nav>
-<!--Navbar End-->
-<!--Body Start-->
-  <div class="container my-5rem ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nobis cupiditate culpa fuga harum quibusdam eos? Alias eos cumque error iure, doloremque ab, blanditiis omnis assumenda in nemo quas commodi ad recusandae sunt! Asperiores laboriosam perferendis culpa suscipit aliquid quam iure omnis? A neque excepturi omnis deleniti magni, voluptas facilis ipsa sequi ea odit provident deserunt. Totam tenetur, enim dolore minus cumque, omnis eum ab rerum soluta maxime est sed, magnam possimus eius? Consequuntur minima laborum nobis iusto qui dignissimos reprehenderit expedita saepe, dolorem dolorum doloremque eaque autem rem repellendus sapiente aspernatur alias optio excepturi esse dolore eius ipsum, hic cupiditate provident. Nesciunt, debitis ipsam. Aliquam vitae alias cupiditate dolores voluptatibus obcaecati, unde quos laborum dicta quidem officiis necessitatibus officia eius soluta tempore expedita excepturi saepe autem aperiam ab omnis error quasi. Libero est cupiditate culpa veritatis obcaecati? Aut tempore incidunt voluptatem magni illo cumque quibusdam consequuntur iusto quos exercitationem. Dolore sapiente quas adipisci temporibus saepe, inventore maxime quidem eum beatae velit nesciunt delectus eligendi iusto perferendis laudantium facere repellat doloremque nostrum, reiciendis vitae neque nemo quia. Minus dolorum, ea nemo commodi reiciendis quos consectetur nisi. Dignissimos, adipisci accusamus animi nostrum perspiciatis ad, quidem cumque doloribus corporis quam pariatur eveniet debitis, perferendis nulla porro voluptatum dolorum laborum impedit iste labore temporibus hic magni atque vero? Quae cum nihil atque accusamus aut molestiae fugiat magni saepe aspernatur fuga! Iure quisquam reiciendis ad eos harum quas error commodi maiores? Sunt voluptatem praesentium, eligendi earum soluta deserunt quasi in cupiditate. Sunt, repellat. Iusto cumque alias sunt repudiandae ea quas veritatis provident ipsa! Amet, deleniti. Eius id, maxime similique molestias libero eos at assumenda ea aspernatur pariatur impedit facere ut alias reiciendis, corrupti eaque quasi voluptatibus iusto voluptates illum enim, maiores modi vel! Quisquam voluptas deleniti ipsam a. Explicabo veniam ipsa odit fugit, laborum sunt, asperiores nesciunt ad consectetur unde ratione! Nihil, explicabo corporis. Atque, rerum debitis deserunt autem odit velit adipisci eligendi impedit iusto at et aliquam. Hic nostrum animi ipsum quae. Provident ad obcaecati quos nam sunt veritatis beatae architecto enim esse doloremque fugit nulla accusamus impedit aut, perspiciatis dolor similique asperiores in labore! Ullam amet libero, natus tenetur soluta nam? Molestiae, architecto voluptatibus. Illum animi omnis adipisci praesentium, earum deserunt. Debitis impedit hic, maxime quaerat voluptatum optio molestiae facere veritatis! Suscipit enim iure quidem eveniet debitis quae quod doloribus laboriosam nostrum in hic velit, dolor assumenda aperiam quas, repudiandae quo cumque quia, minus animi quam ad esse blanditiis? Doloribus assumenda natus dolore temporibus? Dicta perspiciatis est, tempore voluptates veniam nihil doloremque molestias dolorum pariatur. Eum itaque explicabo et error ad nemo tempore, porro quo animi cumque esse? Perspiciatis minima, dolor provident ullam, ab eaque saepe veritatis labore tenetur, temporibus obcaecati praesentium! Architecto harum dolore animi totam mollitia perferendis, molestiae optio officiis nulla, unde minima debitis maiores adipisci. Officia atque repudiandae, harum, nulla magnam praesentium provident mollitia temporibus maiores quas ipsum! Iure similique eveniet iste, omnis quibusdam, rerum quas doloribus doloremque ut ipsum id facere nisi dicta ea harum officia aliquam in consequatur ullam! Reprehenderit, delectus maiores quos, dicta quibusdam harum, eum repudiandae debitis cum consectetur mollitia velit. Vel saepe ad aperiam incidunt dicta culpa cum nisi maiores odit optio tempora reprehenderit, explicabo sit aspernatur aliquid magnam! In, nihil ducimus fuga autem cum nam quas vitae corporis earum saepe quaerat, neque consequatur nisi tempora libero. Repellendus, fuga consectetur? Voluptatibus eaque fugit molestiae iste incidunt maxime alias expedita maiores consequuntur, ducimus, ipsa necessitatibus nostrum sunt dicta odio at? Ipsum non perspiciatis alias temporibus assumenda voluptatum dicta in nesciunt officiis. Distinctio exercitationem quia aliquam molestiae dignissimos eius sed corrupti? Molestiae impedit totam laboriosam sapiente, quo officiis eligendi eos modi nam minima, maiores nostrum. Architecto commodi sapiente, ipsa pariatur repellendus velit doloremque fugit sequi totam ipsum, consequuntur explicabo labore odio impedit quam, dolores atque delectus sed facere temporibus harum molestias aspernatur iusto. Ratione quod eligendi pariatur aliquam corrupti, non maiores facere quos culpa quasi earum veniam eos? Repellendus deleniti molestiae aliquam iusto sequi labore quae quas, fugiat qui consequuntur perferendis ad voluptate dolores expedita? Soluta voluptatibus corporis iste eligendi doloremque repellat, itaque ipsam optio aliquid voluptatem labore esse debitis fugiat dolorem praesentium in dolores. Quisquam, saepe quam quas, velit harum qui impedit possimus ullam est dolores et, deleniti dignissimos reprehenderit autem inventore ut neque rem ipsa tempora? Mollitia facilis culpa voluptas deserunt? Laborum voluptas ducimus autem dolorum necessitatibus facilis saepe ipsa praesentium nulla quas corporis non recusandae, adipisci accusantium inventore magnam ea fuga, laboriosam aliquam fugiat nemo, quasi nostrum? Non consequuntur saepe corrupti expedita ratione, ad at ipsum laboriosam quis, fugiat cumque est repudiandae? Natus sint cumque reiciendis, quas dolorum obcaecati rem repellat ipsum dolore sapiente recusandae. Atque, sint ad mollitia molestiae omnis debitis exercitationem ipsum iure perspiciatis optio necessitatibus est magnam, aspernatur dolore repellat non ea rem tempore obcaecati at eius? Beatae, aliquid? Tenetur error eligendi nihil quia fugit illo recusandae ad temporibus fugiat! Aperiam, quisquam quam voluptatibus dolore quaerat deserunt voluptates molestias delectus totam laudantium officia, omnis neque, itaque eum. Facere id unde voluptatem, ab laboriosam nihil sunt, maiores aliquam debitis quibusdam enim! Accusantium quos fugit similique repudiandae impedit eum ipsum aliquam! Blanditiis culpa ullam, perspiciatis quam corrupti molestiae odit neque impedit vero dolorum rerum voluptatem consequatur optio nam hic inventore eum omnis ipsa laboriosam incidunt commodi quod doloremque iure. Quidem voluptas distinctio quaerat accusamus quia praesentium in dicta. Maxime laboriosam voluptate id architecto error natus dolorem vel expedita voluptatibus reprehenderit, pariatur nemo perferendis repudiandae ipsam ut laborum veniam minus facere optio? Maiores repellendus earum asperiores necessitatibus officiis fugiat aperiam, expedita laudantium sed odio sequi accusamus harum ipsa placeat, dolorem obcaecati veritatis autem quo minus ullam! Nisi, repudiandae similique, pariatur enim molestiae ipsa rem exercitationem dolore fugit sapiente expedita vitae, itaque porro iure hic harum recusandae officiis possimus eaque! Aperiam eum deserunt quos officia, saepe dolore. Quo voluptates deleniti ducimus ex laudantium quis eaque odit doloremque asperiores dolorem consequatur quidem consequuntur nesciunt tempore, magni voluptatum hic repellendus molestiae laboriosam velit ipsam. A esse ipsa dolores porro sunt blanditiis quasi consectetur distinctio incidunt soluta.
-  </div> 
-<!--Body End-->
-<!--Footer Start-->
-<div class="container-fluid p-5 bg-dark text-light footer">
-  <div class="row">
-    <div class="col-md-4 borderr">
-      <div class="navbar-brand"><img src="logo.png" class="img-fluid" width="270pxalt=""></div>
-      <p class="pt-3"> Sri ManakulaVinayagar Educational Trust was formed with the avowed vision of enlightening the society by offering quality and affordable education to the weaker sections of the society.</p>
+      </div>
+    </nav>
+    <!--Navbar End-->
+    <!--Body Start-->
+    <div class="container my-5rem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nobis
+      cupiditate culpa fuga harum quibusdam eos? Alias eos cumque error iure,
+      doloremque ab, blanditiis omnis assumenda in nemo quas commodi ad
+      recusandae sunt! Asperiores laboriosam perferendis culpa suscipit aliquid
+      quam iure omnis? A neque excepturi omnis deleniti magni, voluptas facilis
+      ipsa sequi ea odit provident deserunt. Totam tenetur, enim dolore minus
+      cumque, omnis eum ab rerum soluta maxime est sed, magnam possimus eius?
+      Consequuntur minima laborum nobis iusto qui dignissimos reprehenderit
+      expedita saepe, dolorem dolorum doloremque eaque autem rem repellendus
+      sapiente aspernatur alias optio excepturi esse dolore eius ipsum, hic
+      cupiditate provident. Nesciunt, debitis ipsam. Aliquam vitae alias
+      cupiditate dolores voluptatibus obcaecati, unde quos laborum dicta quidem
+      officiis necessitatibus officia eius soluta tempore expedita excepturi
+      saepe autem aperiam ab omnis error quasi. Libero est cupiditate culpa
+      veritatis obcaecati? Aut tempore incidunt voluptatem magni illo cumque
+      quibusdam consequuntur iusto quos exercitationem. Dolore sapiente quas
+      adipisci temporibus saepe, inventore maxime quidem eum beatae velit
+      nesciunt delectus eligendi iusto perferendis laudantium facere repellat
+      doloremque nostrum, reiciendis vitae neque nemo quia. Minus dolorum, ea
+      nemo commodi reiciendis quos consectetur nisi. Dignissimos, adipisci
+      accusamus animi nostrum perspiciatis ad, quidem cumque doloribus corporis
+      quam pariatur eveniet debitis, perferendis nulla porro voluptatum dolorum
+      laborum impedit iste labore temporibus hic magni atque vero? Quae cum
+      nihil atque accusamus aut molestiae fugiat magni saepe aspernatur fuga!
+      Iure quisquam reiciendis ad eos harum quas error commodi maiores? Sunt
+      voluptatem praesentium, eligendi earum soluta deserunt quasi in
+      cupiditate. Sunt, repellat. Iusto cumque alias sunt repudiandae ea quas
+      veritatis provident ipsa! Amet, deleniti. Eius id, maxime similique
+      molestias libero eos at assumenda ea aspernatur pariatur impedit facere ut
+      alias reiciendis, corrupti eaque quasi voluptatibus iusto voluptates illum
+      enim, maiores modi vel! Quisquam voluptas deleniti ipsam a. Explicabo
+      veniam ipsa odit fugit, laborum sunt, asperiores nesciunt ad consectetur
+      unde ratione! Nihil, explicabo corporis. Atque, rerum debitis deserunt
+      autem odit velit adipisci eligendi impedit iusto at et aliquam. Hic
+      nostrum animi ipsum quae. Provident ad obcaecati quos nam sunt veritatis
+      beatae architecto enim esse doloremque fugit nulla accusamus impedit aut,
+      perspiciatis dolor similique asperiores in labore! Ullam amet libero,
+      natus tenetur soluta nam? Molestiae, architecto voluptatibus. Illum animi
+      omnis adipisci praesentium, earum deserunt. Debitis impedit hic, maxime
+      quaerat voluptatum optio molestiae facere veritatis! Suscipit enim iure
+      quidem eveniet debitis quae quod doloribus laboriosam nostrum in hic
+      velit, dolor assumenda aperiam quas, repudiandae quo cumque quia, minus
+      animi quam ad esse blanditiis? Doloribus assumenda natus dolore
+      temporibus? Dicta perspiciatis est, tempore voluptates veniam nihil
+      doloremque molestias dolorum pariatur. Eum itaque explicabo et error ad
+      nemo tempore, porro quo animi cumque esse? Perspiciatis minima, dolor
+      provident ullam, ab eaque saepe veritatis labore tenetur, temporibus
+      obcaecati praesentium! Architecto harum dolore animi totam mollitia
+      perferendis, molestiae optio officiis nulla, unde minima debitis maiores
+      adipisci. Officia atque repudiandae, harum, nulla magnam praesentium
+      provident mollitia temporibus maiores quas ipsum! Iure similique eveniet
+      iste, omnis quibusdam, rerum quas doloribus doloremque ut ipsum id facere
+      nisi dicta ea harum officia aliquam in consequatur ullam! Reprehenderit,
+      delectus maiores quos, dicta quibusdam harum, eum repudiandae debitis cum
+      consectetur mollitia velit. Vel saepe ad aperiam incidunt dicta culpa cum
+      nisi maiores odit optio tempora reprehenderit, explicabo sit aspernatur
+      aliquid magnam! In, nihil ducimus fuga autem cum nam quas vitae corporis
+      earum saepe quaerat, neque consequatur nisi tempora libero. Repellendus,
+      fuga consectetur? Voluptatibus eaque fugit molestiae iste incidunt maxime
+      alias expedita maiores consequuntur, ducimus, ipsa necessitatibus nostrum
+      sunt dicta odio at? Ipsum non perspiciatis alias temporibus assumenda
+      voluptatum dicta in nesciunt officiis. Distinctio exercitationem quia
+      aliquam molestiae dignissimos eius sed corrupti? Molestiae impedit totam
+      laboriosam sapiente, quo officiis eligendi eos modi nam minima, maiores
+      nostrum. Architecto commodi sapiente, ipsa pariatur repellendus velit
+      doloremque fugit sequi totam ipsum, consequuntur explicabo labore odio
+      impedit quam, dolores atque delectus sed facere temporibus harum molestias
+      aspernatur iusto. Ratione quod eligendi pariatur aliquam corrupti, non
+      maiores facere quos culpa quasi earum veniam eos? Repellendus deleniti
+      molestiae aliquam iusto sequi labore quae quas, fugiat qui consequuntur
+      perferendis ad voluptate dolores expedita? Soluta voluptatibus corporis
+      iste eligendi doloremque repellat, itaque ipsam optio aliquid voluptatem
+      labore esse debitis fugiat dolorem praesentium in dolores. Quisquam, saepe
+      quam quas, velit harum qui impedit possimus ullam est dolores et, deleniti
+      dignissimos reprehenderit autem inventore ut neque rem ipsa tempora?
+      Mollitia facilis culpa voluptas deserunt? Laborum voluptas ducimus autem
+      dolorum necessitatibus facilis saepe ipsa praesentium nulla quas corporis
+      non recusandae, adipisci accusantium inventore magnam ea fuga, laboriosam
+      aliquam fugiat nemo, quasi nostrum? Non consequuntur saepe corrupti
+      expedita ratione, ad at ipsum laboriosam quis, fugiat cumque est
+      repudiandae? Natus sint cumque reiciendis, quas dolorum obcaecati rem
+      repellat ipsum dolore sapiente recusandae. Atque, sint ad mollitia
+      molestiae omnis debitis exercitationem ipsum iure perspiciatis optio
+      necessitatibus est magnam, aspernatur dolore repellat non ea rem tempore
+      obcaecati at eius? Beatae, aliquid? Tenetur error eligendi nihil quia
+      fugit illo recusandae ad temporibus fugiat! Aperiam, quisquam quam
+      voluptatibus dolore quaerat deserunt voluptates molestias delectus totam
+      laudantium officia, omnis neque, itaque eum. Facere id unde voluptatem, ab
+      laboriosam nihil sunt, maiores aliquam debitis quibusdam enim! Accusantium
+      quos fugit similique repudiandae impedit eum ipsum aliquam! Blanditiis
+      culpa ullam, perspiciatis quam corrupti molestiae odit neque impedit vero
+      dolorum rerum voluptatem consequatur optio nam hic inventore eum omnis
+      ipsa laboriosam incidunt commodi quod doloremque iure. Quidem voluptas
+      distinctio quaerat accusamus quia praesentium in dicta. Maxime laboriosam
+      voluptate id architecto error natus dolorem vel expedita voluptatibus
+      reprehenderit, pariatur nemo perferendis repudiandae ipsam ut laborum
+      veniam minus facere optio? Maiores repellendus earum asperiores
+      necessitatibus officiis fugiat aperiam, expedita laudantium sed odio sequi
+      accusamus harum ipsa placeat, dolorem obcaecati veritatis autem quo minus
+      ullam! Nisi, repudiandae similique, pariatur enim molestiae ipsa rem
+      exercitationem dolore fugit sapiente expedita vitae, itaque porro iure hic
+      harum recusandae officiis possimus eaque! Aperiam eum deserunt quos
+      officia, saepe dolore. Quo voluptates deleniti ducimus ex laudantium quis
+      eaque odit doloremque asperiores dolorem consequatur quidem consequuntur
+      nesciunt tempore, magni voluptatum hic repellendus molestiae laboriosam
+      velit ipsam. A esse ipsa dolores porro sunt blanditiis quasi consectetur
+      distinctio incidunt soluta.
     </div>
-    <div class="col-md-3 "></div>
-    <div class="col-md-3 borderr">
-
+    <!--Body End-->
+    <!--Footer Start-->
+    <div class="container-fluid p-5 pb-3 bg-dark text-secondary footer">
+      <div class="row">
+        <div class="col-md-4 borderr">
+          <div class="navbar-brand image-magic">
+            <img src="logo.png" class="img-fluid " width="270pxalt="">
+          </div>
+          <p class="pt-3">
+            Sri ManakulaVinayagar Educational Trust was formed with the avowed
+            vision of enlightening the society by offering quality and
+            affordable education to the weaker sections of the society.
+          </p>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 borderr">
+          <span
+            ><i class="fa-solid fa-house-chimney"></i> Mannadipet Commune,
+            Madagadipet, Puducherry 605107.</span
+          >
+          <br /><br />
+          <span><i class="fa-solid fa-envelope"></i> smvec@gmail.com</span>
+          <br /><br />
+          <span><i class="fa-solid fa-phone"></i> 9988443299</span>
+        </div>
+        <div class="col-md-2 borderr flex-colum">
+          <a class="nav-link" href="">Your Account</a>
+          <a class="nav-link" href="">About Us</a>
+          <a class="nav-link" href="">Help</a>
+        </div>
+      </div>
+      <div class="row">
+        <hr class="mt-3" />
+        <div class="col-md-8">
+          <p>
+            <b
+              >&copy2022 Copyright: Sri Manakula Vinayagar Engineering
+              Collage</b
+            >
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex justify-content-evenly">
+            <a href=""
+              ><button class="btn btn-outline-secondary">
+                <i class="fa-brands fa-facebook-f"></i></button
+            ></a>
+            <a href=""
+              ><button class="btn btn-outline-secondary">
+                <i class="fa-brands fa-instagram"></i></button
+            ></a>
+            <a href=""
+              ><button class="btn btn-outline-secondary">
+                <i class="fa-brands fa-whatsapp"></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-2 borderr flex-colum ">
-        <a  class="nav-link" href="">Your Account</a>
-        <a  class="nav-link" href="">About Us</a>
-        <a  class="nav-link" href="">Help</a>
-    </div>
-  </div>
-    
-  <div class="row">
-    <hr>
-    <div class="col-md-8">
-      <p>copy</p>
-    </div>
-  </div>
-</div> 
-<!--Footer End-->
-  <!--Script Bootstrap-->
-  <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
-</body>
+    <!--Footer End-->
+    <!--Script Bootstrap-->
+    <script
+      src="https://kit.fontawesome.com/db6a0c67e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
